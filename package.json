@@ -1,24 +1,20 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "A real-time online chat application",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": [
-    "chat",
-    "realtime",
-    "socket.io",
-    "nodejs"
-  ],
+  "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.14"
   }
 }
