@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <h1>Chats</h1>
+
+                <button id="new-chat-btn">
+                    +
+                </button>
+            </div>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search conversations..."
+                >
+            </div>
+
+            <div id="conversation-list" class="conversation-list">
+
+                <div class="conversation active">
+
+                    <div class="avatar">
+                        A
+                    </div>
+
+                    <div class="conversation-info">
+
+                        <div class="conversation-top">
+                            <strong>Alex</strong>
+                            <span>10:42</span>
+                        </div>
+
+                        <p>Hey! How are you?</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Chat -->
+        <main class="chat">
+
+            <header class="chat-header">
+
+                <div class="user-info">
+
+                    <div class="avatar">
+                        A
+                    </div>
+
+                    <div>
+                        <h2>Alex</h2>
+                        <span id="user-status">Offline</span>
+                    </div>
+
+                </div>
+
+                <div class="chat-actions">
+                    <button>🔍</button>
+                    <button>⋮</button>
+                </div>
+
+            </header>
+
+
+            <section id="messages" class="messages">
+
+                <div class="message received">
+                    <div class="message-content">
+                        Hey! How are you?
+                    </div>
+                    <span class="message-time">10:40</span>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        I'm good! Working on my new chat application.
+                    </div>
+                    <span class="message-time">10:41</span>
+                </div>
+
+            </section>
+
+
+            <form id="message-form" class="message-form">
+
+                <button type="button" id="attachment-btn">
+                    📎
+                </button>
+
+                <input
+                    type="text"
+                    id="message-input"
+                    placeholder="Write a message..."
+                    autocomplete="off"
+                >
+
+                <button type="submit" id="send-btn">
+                    ➤
+                </button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
